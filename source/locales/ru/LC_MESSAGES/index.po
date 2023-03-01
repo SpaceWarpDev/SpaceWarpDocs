@@ -27,5 +27,5 @@ msgstr ""
 
 #: ../../index.rst:2
 msgid "Welcome to the SpaceWarp wiki!"
-msgstr ""
+msgstr "Translation Test"
 
