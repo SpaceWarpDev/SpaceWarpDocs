@@ -11,5 +11,6 @@ Welcome to the SpaceWarp wiki!
    pages/Getting-started-with-space-warp-mod-development.rst
    pages/Mod-Configuration.rst
    pages/Modding-Tutorial.rst
+   pages/CustomParts.rst
    pages/SpaceWarp.API.Mods.Mod.rst
    pages/modinfo.json.rst
