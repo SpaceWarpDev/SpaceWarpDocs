@@ -1,3 +1,4 @@
 /build
 /.idea
 /.vscode
+/source/_build/gettext/.doctrees

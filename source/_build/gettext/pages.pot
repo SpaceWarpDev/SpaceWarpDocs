@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, SpaceWarpDev
+# This file is distributed under the same license as the SpaceWarpDocs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SpaceWarpDocs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-01 12:07-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../pages/Addressables-Loading.rst:2
+msgid "Addressables Loading"
+msgstr ""
+
+#: ../../pages/Addressables-Loading.rst:4
+msgid "This tutorial provides information on addressables loading"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:2
+msgid "Asset Bundle Loading System"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:4
+msgid "As of 0.2.0 Space Warp provides an asset bundle loader that loads and caches all assets under `SpaceWarp/assets/bundles` for internal Space Warp assets and `ModFolder/assets/bundles`"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:6
+msgid "Asset bundles must have a .bundle extension"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:9
+msgid "Imports"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:16
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:31
+msgid "Methods"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:18
+msgid "**public static T ResourceManager.GetAsset<T>(string path) where T : UnityEngine.Object**"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:20
+msgid "This loads an asset from a path and throws if it can't"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:22
+msgid "**public static bool ResourceManager.TryGet<T>(string path, out T asset) where T : UnityEngine.Object**"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:24
+msgid "This loads an asset from a path, and returns true if successful, otherwise, it returns false and sets asset to null"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:27
+msgid "Paths"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:29
+msgid "Paths are of the following format:"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:31
+msgid "`[mod_id]/[bundle name without .bundle]/[path to asset in bundle without assets/]`"
+msgstr ""
+
+#: ../../pages/Asset-Bundle-System.rst:32
+msgid "For Space Warp internal assets: `space_warp/[bundle name without .bundle]/[path to asset in bundle without assets/]/`"
+msgstr ""
+
+#: ../../pages/Getting-another-Mod.rst:2
+msgid "Getting another Mod"
+msgstr ""
+
+#: ../../pages/Getting-another-Mod.rst:4
+msgid "import ``SpaceWarp.API.Mods``"
+msgstr ""
+
+#: ../../pages/Getting-another-Mod.rst:5
+msgid "use ``ModLocater.TryGet<ModType>(out ModType foundMod)`` where ModType is the type of mod you are trying to get"
+msgstr ""
+
+#: ../../pages/Getting-started-with-space-warp-mod-development.rst:2
+msgid "Getting Started With Space Warp Mod Development"
+msgstr ""
+
+#: ../../pages/Getting-started-with-space-warp-mod-development.rst:4
+msgid "This tutorial provides a way of getting started with space warp mod development"
+msgstr ""
+
+#: ../../pages/Mod-Configuration.rst:2
+#: ../../pages/Modding-Tutorial.rst:2
+msgid "Creating a Configuration Class"
+msgstr ""
+
+#: ../../pages/Mod-Configuration.rst:16
+#: ../../pages/Modding-Tutorial.rst:16
+msgid "Configuration Fields"
+msgstr ""
+
+#: ../../pages/Mod-Configuration.rst:18
+#: ../../pages/Modding-Tutorial.rst:18
+msgid "To create a new field do the following (this creates an input/toggle field in the config editor in Space Warp)"
+msgstr ""
+
+#: ../../pages/Mod-Configuration.rst:28
+#: ../../pages/Modding-Tutorial.rst:28
+msgid "Configuration Sections"
+msgstr ""
+
+#: ../../pages/Mod-Configuration.rst:37
+#: ../../pages/Modding-Tutorial.rst:37
+msgid "Getting The Configuration From Your Mod"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:2
+msgid "SpaceWarp.API.Mods.Mod"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:5
+msgid "Definition"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:22
+msgid "Fields"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:25
+msgid "public BaseModLogger Logger"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:27
+msgid "The mod specific logger, described in the BaseModLogger page ### public ModInfo info The C# representation of the modinfo.json file for this mod"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:34
+msgid "public virtual void Initialize()"
+msgstr ""
+
+#: ../../pages/SpaceWarp.API.Mods.Mod.rst:36
+msgid "This is called when the mod is first loaded, it is loaded after dependencies at this point, to extend this make sure to do ``base.Initialize()`` in the subclass ### public abstract void OnInitialized() This is called after all mods are loaded, this should be your default entrypoint"
+msgstr ""
+
+#: ../../pages/modinfo.json.rst:2
+msgid "modinfo.json"
+msgstr ""
+
+#: ../../pages/modinfo.json.rst:4
+msgid "The modinfo.json file for a mod follows the following structure"
+msgstr ""
