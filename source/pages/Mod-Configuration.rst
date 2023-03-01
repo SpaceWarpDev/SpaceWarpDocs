@@ -1,5 +1,8 @@
+Configuration
+=============
+
 Creating a Configuration Class
-==============================
+------------------------------
 
 .. code:: cs
 
@@ -13,7 +16,7 @@ Creating a Configuration Class
    }
 
 Configuration Fields
-====================
+--------------------
 
 To create a new field do the following (this creates an input/toggle
 field in the config editor in Space Warp)
@@ -25,7 +28,7 @@ field in the config editor in Space Warp)
    public int name;
 
 Configuration Sections
-======================
+----------------------
 
 .. code:: cs
 
@@ -34,7 +37,7 @@ Configuration Sections
    ...
 
 Getting The Configuration From Your Mod
-=======================================
+---------------------------------------
 
 .. code:: cs
 

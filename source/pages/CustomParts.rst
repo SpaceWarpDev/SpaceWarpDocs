@@ -7,13 +7,15 @@ Initial Setup
 -------------
 To start with, we need to set up our unity development environment that we will be using to create our custom parts. 
 
-**Unity**
+Unity
+~~~~~
 
 1. Install `Unity 2020.3.33f1 <https://unity.com/releases/editor/whats-new/2020.3.33#release-notes>`_. That is the 
    version of unity that Kerbal Space Program 2 uses, so it is the version we need.
 2. Create a new project, if you are using unity hub, ensure your editor version is set correctly.
 
-**Thunderkit**
+Thunderkit
+~~~~~~~~~~
 
 3. Download the source code zip file from latest release of `ThunderKit <https://github.com/PassivePicasso/ThunderKit/releases/latest>`_ 
    on GitHub. This is a tool that will load the needed components into the Unity Project, as well as do several other 
@@ -29,7 +31,8 @@ To start with, we need to set up our unity development environment that we will 
 9. Select Import to load the game into your project. If it shows 'API Update Required' click 'I Made a Backup. Go Ahead!'
 10. When prompted, restart the project.
 
-**Addressables**
+Addressables
+~~~~~~~~~~~~
 
 12. Re-Open the package manager, change the option at the top from Packages: In Project to Unity Registry.
 13. Select Addressables, then Install. You may get some errors in your console at this step, they can (probably) be 
