@@ -22,4 +22,4 @@ Now that you have the tools needed installed, you can create a new locale.
 
 to be finished docs...
 
-Current Launages being worked on:
+Current languages being worked on:
