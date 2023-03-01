@@ -1,3 +1,6 @@
+modinfo.json
+=========================================
+
 The modinfo.json file for a mod follows the following structure
 
 ::

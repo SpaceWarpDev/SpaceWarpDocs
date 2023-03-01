@@ -8,7 +8,7 @@
 import sphinx_rtd_theme
 
 project = 'SpaceWarpDocs'
-copyright = '2023, Sinon'
+copyright = '2023, SpaceWarpDev'
 author = 'Sinon'
 release = '0.0.0'
 

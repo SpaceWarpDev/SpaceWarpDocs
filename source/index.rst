@@ -5,18 +5,11 @@ Welcome to the SpaceWarp wiki!
    :maxdepth: 2
    :caption: Contents:
 
-   Addressables-Loading
-   Asset-Bundle-System
-   Getting-another-Mod
-   Getting-started-with-space-warp-mod-development
-   Mod-Configuration
-   Modding-Tutorial
-   SpaceWarp.API.Mods.Mod
-
-
-Indices and tables
-==================
-
-* :ref:`Get Started <genindex>`
-* :ref:`modindex`
-* :ref:`search`
+   pages/Addressables-Loading.rst
+   pages/Asset-Bundle-System.rst
+   pages/Getting-another-Mod.rst
+   pages/Getting-started-with-space-warp-mod-development.rst
+   pages/Mod-Configuration.rst
+   pages/Modding-Tutorial.rst
+   pages/SpaceWarp.API.Mods.Mod.rst
+   pages/modinfo.json.rst
