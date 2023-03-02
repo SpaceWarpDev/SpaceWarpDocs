@@ -10,7 +10,7 @@ import sphinx_rtd_theme
 project = 'SpaceWarpDocs'
 copyright = '2023, SpaceWarpDev'
 author = 'Sinon'
-release = '0.0.0'
+release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -19,7 +19,6 @@ extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = []
-
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -31,4 +30,8 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 
 # -- Options for Languages ---------------------------------------------
-locale_dirs=["locale"]
+# Enable internationalization support
+needs_sphinx = '3.0'
+locale_dirs = ['locale/']
+gettext_compact = False   # optional, to make .mo files smaller
+language = 'en'           # the default language

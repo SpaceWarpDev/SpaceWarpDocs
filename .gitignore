@@ -2,4 +2,4 @@
 /.idea
 /.vscode
 /source/_build/gettext/.doctrees
-/_build
+/source/_build

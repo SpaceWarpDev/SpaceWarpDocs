@@ -3,7 +3,7 @@ Welcome to the SpaceWarp wiki!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table of Contents:
 
    pages/Addressables-Loading.rst
    pages/Asset-Bundle-System.rst
