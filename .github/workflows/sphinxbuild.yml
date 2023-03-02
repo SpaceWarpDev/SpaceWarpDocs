@@ -5,9 +5,9 @@ name: Sphinx Build Test
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "en", "ru" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "en", "ru" ]
 
 jobs:
   build:
@@ -30,5 +30,5 @@ jobs:
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Build with Sphinx
-      run: mkdir build | ls | sphinx-build source/ build/
+      run: mkdir build | mkdir _static | sphinx-build . build
      
