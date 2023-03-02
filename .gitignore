@@ -4,3 +4,8 @@
 /source/_build/gettext/.doctrees
 /source/_build
 /source/__pycache__
+
+# Translations
+
+# RU 
+/source-ru/__pycache__
