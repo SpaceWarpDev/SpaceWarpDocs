@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Конфигурация &mdash; документация SpaceWarpDocs 0.0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="Создание пользовательских деталей" href="CustomParts.html" />
+    <link rel="prev" title="Приступаем к разработке модов Space Warp" href="Getting-started-with-space-warp-mod-development.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            SpaceWarpDocs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Оглавление:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Addressables-Loading.html">Загрузка адресов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Asset-Bundle-System.html">Система загрузки пакетов активов</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting-another-Mod.html">Получение другого мода</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting-started-with-space-warp-mod-development.html">Приступаем к разработке модов Space Warp</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Конфигурация</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Создание класса конфигурации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Поля конфигурации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Разделы конфигурации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">Получение конфигурации из вашего мода</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CustomParts.html">Создание пользовательских деталей</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SpaceWarp.API.Mods.Mod.html">SpaceWarp.API.Mods.Mod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modinfo.json.html">modinfo.json</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SpaceWarpDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Конфигурация</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/pages/Mod-Configuration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Конфигурация<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<section id="id2">
+<h2>Создание класса конфигурации<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-cs notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">SpaceWarp.API.Configuration</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="nn">Newtonsoft.Json</span><span class="p">;</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">Namespace</span><span class="p">;</span><span class="w"></span>
+<span class="na">[JsonObject(MemberSerialization.OptOut)]</span><span class="w"></span>
+<span class="na">[ModConfig]</span><span class="w"></span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Config</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Поля конфигурации<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>Чтобы создать новое поле, сделайте следующее (это создаст поле ввода/переключения).
+поле в редакторе конфигов в Space Warp)</p>
+<div class="highlight-cs notranslate"><div class="highlight"><pre><span></span><span class="na">[ConfigField(&quot;name&quot;)]</span><span class="w"></span>
+<span class="na">[ConfigDefaultValue(3)]</span><span class="w"> </span><span class="c1">// Optional</span>
+<span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>Разделы конфигурации<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-cs notranslate"><div class="highlight"><pre><span></span><span class="na">[ConfigSection(&quot;folder/in/menu&quot;)]</span><span class="w"></span>
+<span class="na">[ConfigField(&quot;name&quot;)]</span><span class="w"></span>
+<span class="p">...</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>Получение конфигурации из вашего мода<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-cs notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">SpaceWarp.API.Configuration</span><span class="p">;</span><span class="w"></span>
+<span class="p">.</span><span class="w"></span>
+<span class="p">.</span><span class="w"></span>
+<span class="p">.</span><span class="w"></span>
+<span class="n">ManagerLocator</span><span class="p">.</span><span class="n">TryGet</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">ConfigurationManager</span><span class="w"> </span><span class="n">configManager</span><span class="p">);</span><span class="w"></span>
+<span class="n">Config</span><span class="w"> </span><span class="n">conf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">null</span><span class="p">;</span><span class="w"> </span><span class="c1">//Config is the name of your configuration class</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">configManager</span><span class="p">.</span><span class="n">TryGet</span><span class="p">(</span><span class="s">&quot;mod_id&quot;</span><span class="p">,</span><span class="k">out</span><span class="w"> </span><span class="kt">var</span><span class="w"> </span><span class="n">config</span><span class="p">))</span><span class="w"> </span><span class="n">conf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">(</span><span class="n">Config</span><span class="p">)</span><span class="n">conf</span><span class="p">.</span><span class="n">configObject</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Getting-started-with-space-warp-mod-development.html" class="btn btn-neutral float-left" title="Приступаем к разработке модов Space Warp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="CustomParts.html" class="btn btn-neutral float-right" title="Создание пользовательских деталей" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, SpaceWarpDev.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
