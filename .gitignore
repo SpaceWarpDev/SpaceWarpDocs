@@ -3,3 +3,4 @@
 /.vscode
 /source/_build/gettext/.doctrees
 /source/_build
+/source/__pycache__
