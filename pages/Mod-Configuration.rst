@@ -11,15 +11,17 @@ Creating a Configuration Class
    namespace Namespace;
    [JsonObject(MemberSerialization.OptOut)]
    [ModConfig]
-   public class Config {
+   public class Config 
+   {
       ...
    }
 
 Configuration Fields
 --------------------
 
-To create a new field do the following (this creates an input/toggle
-field in the config editor in Space Warp)
+In order to create a new field in the configuration menu, add the following. 
+
+(this creates an input/toggle field in the config editor in Space Warp)
 
 .. code:: cs
 

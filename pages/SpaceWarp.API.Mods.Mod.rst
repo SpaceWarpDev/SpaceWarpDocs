@@ -21,8 +21,9 @@ Definition
 Fields
 ------
 
-public BaseModLogger Logger
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::
+    
+    public BaseModLogger Logger
 
 The mod specific logger, described in the BaseModLogger page ### public
 ModInfo info The C# representation of the modinfo.json file for this mod
@@ -30,11 +31,12 @@ ModInfo info The C# representation of the modinfo.json file for this mod
 Methods
 -------
 
-public virtual void Initialize()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::
+    
+    public virtual void Initialize()
 
-This is called when the mod is first loaded, it is loaded after
-dependencies at this point, to extend this make sure to do
-``base.Initialize()`` in the subclass ### public abstract void
-OnInitialized() This is called after all mods are loaded, this should be
+This is called when the mod is first loaded. It is loaded after
+dependencies. To extend this make sure to do
+``base.Initialize()`` in the subclass :code:`public abstract void
+OnInitialized()` This is called after all mods are loaded, this should be
 your default entrypoint
