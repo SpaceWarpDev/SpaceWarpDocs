@@ -46,4 +46,4 @@ Current languages being worked on:
 ---
 Disclaimer:
 
-I in no way condone what is happening in Ukraine, and the only reason I give Russian as my examples is that it's the launage that I grew up with. I learned English as a second language. I do not know a third language to give examples with. 
+I in no way condone what is happening in Ukraine, and the only reason I give Russian as my examples is that it's the language that I grew up with. I learned English as a second language. I do not know a third language to give examples with. 
