@@ -105,7 +105,7 @@ and the description can be blank, but remember to include it. The four keys you 
    Parts/Title/truss_2v_square_1x1_custom,Text,,Custom Truss
    Parts/Subtitle/truss_2v_square_1x1_custom,Text,,TR-CU
    Parts/Manufacturer/truss_2v_square_1x1_custom,Text,,Somewhere
-   Parts/Description/truss_2v_square_1x1_custom,Text,,"Definitely different from the other truss, and better too. Trust me."
+   Parts/Description/truss_2v_square_1x1_custom,Text,,"Definitely different from the other truss, and better too. Truss me."
 
 Final Steps
 -----------
