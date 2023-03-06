@@ -2,9 +2,11 @@
  
  ## Getting Started
 
- `pip install -r requirements.txt`
- 
- `sphinx-autobuild source/ build/html/`
+`git pull -b <existing language code ex. (en)> https://github.com/SpaceWarpDev/SpaceWarpDocs.git`
+
+`cd SpaceWarpDocs`
+
+`sphinx-autobuild . build`
  
  [Live Docs](https://spacewarpdocs.readthedocs.io/)
 
