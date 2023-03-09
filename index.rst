@@ -5,6 +5,7 @@ Welcome to the SpaceWarp wiki!
    :maxdepth: 2
    :caption: Table of Contents:
 
+   pages/Upgrading-SpaceWarp.rst
    pages/Addressables-Loading.rst
    pages/Asset-Bundle-System.rst
    pages/Getting-another-Mod.rst
