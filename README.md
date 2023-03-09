@@ -2,7 +2,7 @@
  
  ## Getting Started
 
-`git pull -b <existing language code ex. (en)> https://github.com/SpaceWarpDev/SpaceWarpDocs.git`
+`git clone -b <existing language code ex. (en)> https://github.com/SpaceWarpDev/SpaceWarpDocs.git`
 
 `cd SpaceWarpDocs`
 
