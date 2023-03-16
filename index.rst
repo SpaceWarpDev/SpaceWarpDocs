@@ -1,3 +1,6 @@
+Welcome to the SpaceWarp wiki!
+=========================================
+
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents:
