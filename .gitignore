@@ -1,0 +1,5 @@
+*.old
+.vscode/
+build/
+old-pages/
+gen_scripts/
