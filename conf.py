@@ -6,19 +6,22 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import sphinx_rtd_theme
+import os
+
+# run command to install sphinx-rtd-dark-mode
+os.system("pip install sphinx-rtd-dark-mode")
 
 project = 'SpaceWarpDocs'
 copyright = '2023, SpaceWarpDev'
 author = 'Sinon'
-release = '0.0.1'
+release = '1.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [
-    'sphinx.ext.autosectionlabel'
+extensions = ["sphinx_rtd_dark_mode"]
 
-]
+default_dark_mode = False
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -30,11 +33,9 @@ exclude_patterns = []
 html_theme = "sphinx_rtd_theme"
 #html_logo = "_static/logo.png"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_static_path = ['_static']
 
 # -- Options for Languages ---------------------------------------------
 # Enable internationalization support
 needs_sphinx = '3.0'
-locale_dirs = ['locale/']
 gettext_compact = False   # optional, to make .mo files smaller
 language = 'en'           # the default language
