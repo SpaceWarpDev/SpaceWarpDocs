@@ -30,7 +30,7 @@ Follow all the same steps in the :ref:`Addressables Loading` documentation for m
 
 Using the new Colors feature
 ----------------------------
-KSP 2 has a new feature, allowing for parts to be colored in the VAB. But we can't directly set this up in Unity since KSP 2 uses a
+KSP 2 has a new feature allowing for parts to be colored in the VAB. But we can't directly set this up in Unity since KSP 2 uses a
 custom shader. SpaceWarp has an alternative to this.
 
 First, in Unity, set all the materials on your part that are meant to be replaced to `Standard` (Unity built in shader),
