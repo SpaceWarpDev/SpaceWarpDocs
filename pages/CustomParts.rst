@@ -34,13 +34,15 @@ KSP 2 has a new feature, allowing for parts to be colored in the VAB. But we can
 custom shader. SpaceWarp has an alternative to this.
 
 First, in Unity, set all the materials on your part that are meant to be replaced to `Standard` (Unity built in shader),
-then, in your `ModPlugin` class (either :code:`OnPreInitialized()` or :code:`OnInitialized()`) call :code:`Colors.DeclareParts`.
+then, in your `ModPlugin` class (in either :code:`OnPreInitialized` or :code:`OnInitialized`) call :code:`Colors.DeclareParts`.
 See below for an example:
 
 .. code-block:: c#
 
     using SpaceWarp.API.Parts;
-
+    
+    ...
+    
     OnPreInitialized()
     {
         Colors.DeclareParts(MyPluginInfo.PLUGIN_GUID, "truss_2v_square_1x1_custom", "truss_2v_square_1x2_custom", "truss_2v_square_1x4_custom");
@@ -51,7 +53,9 @@ Or you can pass an IEnumerable of strings:
 .. code-block:: c#
 
     using SpaceWarp.API.Parts;
-	
+
+    ...
+
     List<string> myParts = new List<string>()
     {
         "truss_2v_square_1x1_custom",
