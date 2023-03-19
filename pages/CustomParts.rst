@@ -74,9 +74,7 @@ is an abbreviation of the texture: :code:`_d` for diffuse, :code:`_n` for normal
 :code:`_e` for emission and :code:`_pm` for paint map. All textures must be in the PNG format.
 
 You only need the diffuse texture and the paint map texture for the color feature to work, but if you have other textures feel free to
-add them, see below for an example:
-
-.. code-block::
+add them, see below for an example::
     ExampleMod
     |
     \-- assets
@@ -96,7 +94,6 @@ add them, see below for an example:
                 |
                 +-- truss_2v_square_1x2_custom_d.png
                 +-- truss_2v_square_1x2_custom_pm.png
-
 
 If for some reason your part's colors aren't getting changed, you can check the logs for more information, all color
 related logs are after :code:`TTR` (short for Taste The Rainbow).
