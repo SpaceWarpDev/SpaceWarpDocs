@@ -76,7 +76,7 @@ is an abbreviation of the texture: :code:`_d` for diffuse, :code:`_n` for normal
 You only need the diffuse texture and the paint map texture for the color feature to work, but if you have other textures feel free to
 add them, see below for an example:
 
-::
+.. code-block::
     ExampleMod
     |
     \-- assets
