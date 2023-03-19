@@ -28,6 +28,72 @@ Setting up the part to be addressable
 -------------------------------------
 Follow all the same steps in the :ref:`Addressables Loading` documentation for making assets addressable, but make sure that the sprites runtime name is :code:`<partName>.png` and the prefabs runtime name is :code:`<partName>.png`
 
+Using the new Colors feature
+----------------------------
+KSP 2 has a new feature, parts now can have different colors! but we can't directly set them in unity since KSP2 uses a
+custom shader. SpaceWarp has an alternative to this.
+
+First, on your part, in the Unity, set all the materials meant to be replaced to `Standard` (Unity built in shader),
+then, on your `ModPlugin` class, either :code:`OnPreInitialized()` or :code:`OnInitialized()` call :code:`Colors.DeclareParts`
+See below for an example
+
+.. code::
+
+	using SpaceWarp.API.Parts;
+
+	OnPreInitialized(){
+	Colors.DeclareParts(MyPluginInfo.ModGUID, "truss_2v_square_1x1_custom", "truss_2v_square_1x2_custom", "truss_2v_square_1x4_custom");
+	}
+
+Or you can pass a IEnumerable of strings
+
+.. code::
+
+	using SpaceWarp.API.Parts;
+	
+	List<string> myParts = new List<string>(){
+	"truss_2v_square_1x1_custom",
+	"truss_2v_square_1x2_custom",
+	"truss_2v_square_1x4_custom"
+	};
+	
+	
+	OnPreInitialized(){
+	Colors.DeclareParts(MyPluginInfo.ModGUID, myParts);
+	}
+
+Now, In your mod directory, create a :code:`images` folder inside the :code:`assets` folder, then add your textures as
+:code:`<partName><textureMapType>.png` where :code:`<partName>` is the name of your part in the JSON and :code:`<textureMapType>` is an abbreviation
+of the texture using :code:`_d` for diffuse, :code:`_n` for normal, :code:`_m` for mettalic, :code:`_ao` for ambient occlusion
+:code:`_e` for emission and :code:`_pm` for paint map. All textures must be in .png.
+You only need the diffuse texture and the paint map texture for the color feature to work, but if you have other textures feel free
+add them, see below for example
+
+.. code::
+	
+	ExampleMod
+	|
+	\--assets
+		|
+		\--images
+			|
+			+--truss_2v_square_1x1_custom
+			|	|
+			|	+--truss_2v_square_1x1_custom_d.png
+			|	+--truss_2v_square_1x1_custom_n.png
+			|	+--truss_2v_square_1x1_custom_m.png
+			|	+--truss_2v_square_1x1_custom_ao.png
+			|	+--truss_2v_square_1x1_custom_e.png
+			|	+--truss_2v_square_1x1_custom_pm.png
+			|
+			+--truss_2v_square_1x2_custom
+				|
+				+--truss_2v_square_1x2_custom_d.png
+				+--truss_2v_square_1x2_custom_pm.png
+
+
+If for some reason your part isn't having its colors changed, you can check the logs for more information, all color
+related logs are after :code:`TTR` (short for Taste The Rainbow).
 
 Translation formats for parts
 -----------------------------
