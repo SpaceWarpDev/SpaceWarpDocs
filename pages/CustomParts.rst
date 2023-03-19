@@ -33,7 +33,7 @@ Using the new Colors feature
 KSP 2 has a new feature allowing for parts to be colored in the VAB. But we can't directly set this up in Unity since KSP 2 uses a
 custom shader. SpaceWarp has an alternative to this.
 
-First, in Unity, set all the materials on your part that are meant to be replaced to `Standard` (Unity built in shader),
+First, in Unity, set all the materials on your part that are meant to be replaced to :code:`Standard` (Unity's built-in shader),
 then, in your `ModPlugin` class (in either :code:`OnPreInitialized` or :code:`OnInitialized`) call :code:`Colors.DeclareParts`.
 See below for an example:
 
