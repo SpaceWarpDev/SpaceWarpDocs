@@ -26,7 +26,7 @@ Finally, you will need to create a sprite for your part. The default sprites are
 
 Setting up the part to be addressable
 -------------------------------------
-Follow all the same steps in the :ref:`Addressables Loading` documentation for making assets addressable, but make sure that the sprites runtime name is :code:`<partName>.png` and the prefabs runtime name is :code:`<partName>.png`
+Follow all the same steps in the :ref:`Addressables Loading` documentation for making assets addressable, but make sure that the sprites runtime name is :code:`<partName>_icon.png` and the prefabs runtime name is :code:`<partName>_icon.png`
 
 Using the new Colors feature
 ----------------------------
