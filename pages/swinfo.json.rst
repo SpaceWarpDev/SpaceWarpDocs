@@ -11,6 +11,7 @@ example swinfo.json
 copied from the example mod project in the space warp repo
 ::
     {
+        "spec": "2.0"
         "mod_id": "ExampleMod",
         "name": "Example Mod",
         "author": "Space-Warp Team",
@@ -19,11 +20,16 @@ copied from the example mod project in the space warp repo
         "version_check": "https://raw.githubusercontent.com/SpaceWarpDev/SpaceWarp/main/ExampleMod/swinfo.json",
         "version": "0.4.0",
         "dependencies": [],
+        "conflicts" [],
         "ksp2_version": {
             "min": "0",
             "max": "1"
         }
     }
+
+spec
+----
+This is the spec version for spacewarp that this mod follows, always use "2.0" here
 
 mod_id
 ------
@@ -70,11 +76,28 @@ A version string that denotes the mods version
 
 dependencies
 ------------
-A list of mod dependencies to be shown to the user
+A list of mod dependencies to be shown to the user and checked against
 ::
     "dependencies": []
 
 Each dependency is of the following format
+::
+    {
+        "id": "SpaceWarp",
+        "version": {
+            "min": "0.4.0",
+            "max": "1.0.0"
+        }
+    }
+Where id is the mod_id of the other mod, and version contains a min and max field for the range of possible versions. min or max can also be `*` for any version, or `x.*` for any patch of a certain version and so on
+
+conflicts
+---------
+A list of mod dependencies to be shown to the user and checked against
+::
+    "conflicts": []
+
+Each conflict is of the following format
 ::
     {
         "id": "SpaceWarp",
