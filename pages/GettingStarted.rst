@@ -10,9 +10,8 @@ Prerequisites
 Project Setup
 -------------
 
-1. If you are using Visual Studio create a template with the `Space Warp Mod Template <https://github.com/jan-bures/SpaceWarp.Template>`_
-2. If you are using rider, use the `Kerbal Dev <https://github.com/arthomnix/KerbalDev/>`_ plugin.
-3. Copy the :code:`<KSP2 Root>/KSP2_x64_Data/Managed/Assembly-CSharp.dll` file from your game into the :code:`<project root>/external_dlls/` folder
+ - If you are using Visual Studio create a template with the `Space Warp Mod Template <https://github.com/jan-bures/SpaceWarp.Template>`_
+ - If you are using rider, use the `Kerbal Dev <https://github.com/arthomnix/KerbalDev/>`_ plugin.
 
 From there you should be set with an example project, and can go from there on the wiki!
 
