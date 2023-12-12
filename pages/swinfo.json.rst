@@ -20,7 +20,7 @@ copied from the example mod project in the space warp repo
         "version_check": "https://raw.githubusercontent.com/SpaceWarpDev/SpaceWarp/main/ExampleMod/swinfo.json",
         "version": "0.4.0",
         "dependencies": [],
-        "conflicts" [],
+        "conflicts": [],
         "ksp2_version": {
             "min": "0",
             "max": "1"
