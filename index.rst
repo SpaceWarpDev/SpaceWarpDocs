@@ -4,7 +4,7 @@ Welcome to the SpaceWarp wiki!
 Disclaimer
 ----------
 
-This documentation is deprecated and severely outdated, for use with KSP2 0.1.5+, please visit `the modding wiki <https://modding.kerbal.wiki>`_.
+This documentation is deprecated and severely outdated, for use with KSP2 0.1.5+, please visit `the modding wiki <https://modding.kerbal.wiki>`_. 
 
 .. toctree::
    :maxdepth: 2
