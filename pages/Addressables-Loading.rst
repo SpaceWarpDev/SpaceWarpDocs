@@ -14,7 +14,7 @@ This subsection provides information on what is necessary to be done to create a
 Unity
 ~~~~~
 
-1. Install `Unity 2020.3.33f1 <https://unity.com/releases/editor/whats-new/2020.3.33#release-notes>`_. That is the 
+1. Install `Unity 2022.3.5f1 <https://unity.com/releases/editor/whats-new/2022.3.5#release-notes>`_. That is the 
    version of unity that Kerbal Space Program 2 uses, so it is the version we need.
 2. Create a new project, if you are using unity hub, ensure your editor version is set correctly.
 
